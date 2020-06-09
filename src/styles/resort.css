@@ -100,7 +100,7 @@ html {
 
 .overlay-2 p {
   position: relative;
-  left: 250px;
+  left: 200px !important;
   margin-top: -30px;
   line-height: 1.5;
   font-size: 12px;
@@ -126,4 +126,63 @@ html {
 
 .overlay-4 h4 {
   line-height: 1.5;
+}
+
+@media (max-width: 1128px) {
+  .overlay-2 p {
+    position: relative;
+    left: 40px;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery__item--3 {
+    grid-column-start: 4 !important;
+    grid-column-end: 9 !important;
+  }
+  .gallery__item--3 h4 {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 962px) {
+  .explore {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore .gallery__img {
+    width: 200px !important;
+    height: auto;
+  }
+  .overlay-1,
+  .overlay-3,
+  .overlay-4 h4 {
+    font-size: 10px;
+    text-align: left !important;
+    padding-bottom: 6px;
+  }
+  .overlay-1,
+  .overlay-3,
+  .overlay-4 {
+    width: 195px;
+    margin-left: 2px !important;
+  }
+  .overlay-2 p {
+    display: none !important;
+  }
+  .overlay-2 {
+    display: none !important;
+  }
+  .overlay-2 h4 {
+    font-size: 10px;
+    text-align: left !important;
+    padding-bottom: 6px;
+  }
+  .explore figure {
+    margin-top: -80px;
+  }
 }
